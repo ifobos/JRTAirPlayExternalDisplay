@@ -67,18 +67,18 @@
 			isa = PBXGroup;
 			children = (
 				311CBAAC1C90D75E00D2BAF6 /* PodFiles */,
+				311CBA951C90D75100D2BAF6 /* Supporting Files */,
 				311CBA981C90D75100D2BAF6 /* AppDelegate.h */,
 				311CBA991C90D75100D2BAF6 /* AppDelegate.m */,
-				311CBA9B1C90D75100D2BAF6 /* ViewController.h */,
-				311CBA9C1C90D75100D2BAF6 /* ViewController.m */,
-				311CBA9E1C90D75100D2BAF6 /* Main.storyboard */,
 				311CBAA11C90D75100D2BAF6 /* Assets.xcassets */,
-				311CBAA31C90D75100D2BAF6 /* LaunchScreen.storyboard */,
-				311CBAA61C90D75100D2BAF6 /* Info.plist */,
-				311CBA951C90D75100D2BAF6 /* Supporting Files */,
 				311CBAB01C90E4E100D2BAF6 /* ExternalDisplayViewController.h */,
 				311CBAB11C90E4E100D2BAF6 /* ExternalDisplayViewController.m */,
 				311CBAB21C90E4E100D2BAF6 /* ExternalDisplayViewController.xib */,
+				311CBAA61C90D75100D2BAF6 /* Info.plist */,
+				311CBAA31C90D75100D2BAF6 /* LaunchScreen.storyboard */,
+				311CBA9E1C90D75100D2BAF6 /* Main.storyboard */,
+				311CBA9B1C90D75100D2BAF6 /* ViewController.h */,
+				311CBA9C1C90D75100D2BAF6 /* ViewController.m */,
 			);
 			path = JRTAirPlayExternalDisplay;
 			sourceTree = "<group>";
@@ -88,7 +88,7 @@
 			children = (
 				311CBA961C90D75100D2BAF6 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		311CBAAC1C90D75E00D2BAF6 /* PodFiles */ = {
@@ -97,7 +97,7 @@
 				311CBAAD1C90D79C00D2BAF6 /* JRTAirPlayExternalDisplay.h */,
 				311CBAAE1C90D79C00D2BAF6 /* JRTAirPlayExternalDisplay.m */,
 			);
-			name = PodFiles;
+			path = PodFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +188,7 @@
 				311CBA9F1C90D75100D2BAF6 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		311CBAA31C90D75100D2BAF6 /* LaunchScreen.storyboard */ = {
@@ -196,6 +197,7 @@
 				311CBAA41C90D75100D2BAF6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -324,6 +326,7 @@
 				311CBAAB1C90D75100D2BAF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
