@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Internal Display" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syT-l5-4Um">
+                                <rect key="frame" x="241" y="290" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTv-J2-WLp">
+                                <rect key="frame" x="0.0" y="311" width="600" height="289"/>
+                                <color key="backgroundColor" red="0.4941176471" green="0.6588235294" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cTv-J2-WLp" secondAttribute="trailing" id="3qZ-dq-Jwv"/>
+                            <constraint firstItem="cTv-J2-WLp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="F43-r6-Aaj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cTv-J2-WLp" secondAttribute="bottom" id="I9v-58-rfm"/>
+                            <constraint firstItem="cTv-J2-WLp" firstAttribute="top" secondItem="syT-l5-4Um" secondAttribute="bottom" id="do7-SM-EA2"/>
+                            <constraint firstItem="syT-l5-4Um" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sMR-rn-vvh"/>
+                            <constraint firstItem="syT-l5-4Um" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zEc-p5-BPR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="284" y="429"/>
+        </scene>
+    </scenes>
+</document>
