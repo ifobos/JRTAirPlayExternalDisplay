@@ -59,14 +59,16 @@
     if (self.secondWindow) {
         self.secondWindow.rootViewController = self.viewController;
     }
-    else if ([[UIScreen screens] count] > 1) {
-        UIScreen *secondScreen = [[UIScreen screens] objectAtIndex:1];
+    else if (self.isAvailable) {
+        UIScreen *secondScreen = [[UIScreen screens] lastObject];
         [self setUpSecondWindowsWithScreen:secondScreen];
     }
 }
 
-
-
+- (BOOL)isAvailable
+{
+    return ([[UIScreen screens] count]>1);
+}
 
 #pragma mark - Notifications
 

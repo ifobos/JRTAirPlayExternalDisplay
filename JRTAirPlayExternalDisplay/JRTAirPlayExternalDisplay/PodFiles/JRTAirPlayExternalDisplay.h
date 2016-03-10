@@ -22,5 +22,6 @@
 
 @interface JRTAirPlayExternalDisplay : NSObject
 @property (weak, nonatomic)UIViewController *viewController;
+@property (nonatomic, readonly) BOOL isAvailable;
 + (instancetype)sharedInstance;
 @end
