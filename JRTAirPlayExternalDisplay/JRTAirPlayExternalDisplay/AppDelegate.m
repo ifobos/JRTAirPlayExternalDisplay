@@ -18,12 +18,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
     self.externalDisplayViewController =  [ExternalDisplayViewController new];
-    
-    [[JRTAirPlayExternalDisplay sharedInstance] checkForExistingScreenAndInitializeIfPresentWithRootViewController:self.externalDisplayViewController];
-    [[JRTAirPlayExternalDisplay sharedInstance] setUpScreenConnectionNotificationHandlers];
-    
+    [JRTAirPlayExternalDisplay sharedInstance].viewController = self.externalDisplayViewController;
+
     return YES;
 }
 
