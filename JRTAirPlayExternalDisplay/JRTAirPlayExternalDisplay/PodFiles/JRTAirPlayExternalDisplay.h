@@ -26,4 +26,6 @@
 
 + (instancetype)sharedInstance;
 - (UIScreen *)airplayScreen;
+-(void)setScreenDidConnectBlock:(void (^)())screenDidConnectBlock;
+- (void)setScreenDidDisconnectBlock:(void (^)())screenDidDisconnectBlock;
 @end

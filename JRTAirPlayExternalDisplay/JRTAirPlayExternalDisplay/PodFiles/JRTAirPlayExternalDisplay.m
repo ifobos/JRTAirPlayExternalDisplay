@@ -22,6 +22,8 @@
 
 @interface JRTAirPlayExternalDisplay ()
 @property (strong, nonatomic) UIWindow *secondWindow;
+@property (nonatomic,copy)void (^screenDidConnectBlock)();
+@property (nonatomic,copy)void (^screenDidDisconnectBlock)();
 @end
 
 @implementation JRTAirPlayExternalDisplay
@@ -62,6 +64,9 @@
     else if (self.isAvailable) {
         UIScreen *secondScreen = [self airplayScreen];
         [self setUpSecondWindowsWithScreen:secondScreen];
+        if (self.screenDidConnectBlock) {
+            self.screenDidConnectBlock();
+        }
     }
 }
 
@@ -92,6 +97,9 @@
     UIScreen *newScreen = [aNotification object];
     if (!self.secondWindow && self.viewController) {
         [self setUpSecondWindowsWithScreen:newScreen];
+        if (self.screenDidConnectBlock) {
+            self.screenDidConnectBlock();
+        }
     }
 }
 
@@ -100,6 +108,9 @@
         // Hide and then delete the window.
         self.secondWindow.hidden = YES;
         self.secondWindow = nil;
+        if (self.screenDidDisconnectBlock) {
+            self.screenDidDisconnectBlock();
+        }
     }
 }
 
