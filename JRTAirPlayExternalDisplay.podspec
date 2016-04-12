@@ -9,5 +9,4 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/ifobos/JRTAirPlayExternalDisplay.git", :tag => "0.0.3" }
   s.source_files = "JRTAirPlayExternalDisplay/JRTAirPlayExternalDisplay/PodFiles/*.{h,m}"
   s.requires_arc = true
-  s.dependency 'AFNetworking'
 end
