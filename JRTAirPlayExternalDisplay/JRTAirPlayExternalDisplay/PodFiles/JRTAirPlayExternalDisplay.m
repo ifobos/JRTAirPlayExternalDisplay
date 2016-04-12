@@ -60,7 +60,7 @@
         self.secondWindow.rootViewController = self.viewController;
     }
     else if (self.isAvailable) {
-        UIScreen *secondScreen = [[UIScreen screens] lastObject];
+        UIScreen *secondScreen = [self airplayScreen];
         [self setUpSecondWindowsWithScreen:secondScreen];
     }
 }
@@ -68,6 +68,14 @@
 - (BOOL)isAvailable
 {
     return ([[UIScreen screens] count]>1);
+}
+
+- (UIScreen *)airplayScreen {
+    UIScreen *screen;
+    if (self.isAvailable) {
+        screen = [[UIScreen screens] lastObject];
+    }
+    return screen;
 }
 
 #pragma mark - Notifications
